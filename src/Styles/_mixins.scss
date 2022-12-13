@@ -1,0 +1,15 @@
+@import "./variables";
+
+@mixin container(
+  $display: flex,
+  $margin: auto,
+  $max-width: 90%,
+  $padding: 2px,
+  $justify-content: space-between
+) {
+  display: $display;
+  margin: $margin;
+  max-width: $max-width;
+  padding: $padding;
+  justify-content: $justify-content;
+}

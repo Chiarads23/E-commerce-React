@@ -1,0 +1,23 @@
+@import "../variables.scss";
+@import '../mixins';
+
+.container {
+    @include container;
+color:$dblue-text-color;
+    
+
+.list{
+    @media only screen and (min-width:635px){
+      display: flex;
+      justify-content: space-between;
+
+    }}
+    li{
+        list-style: none;
+margin: 10px;
+        a{
+            text-decoration: none;
+            color: $dblue-text-color;
+        }
+    }
+}

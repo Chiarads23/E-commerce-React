@@ -1,0 +1,30 @@
+@import "../variables.scss";
+@import "../mixins";
+
+.head {
+  background-color: $first-color;
+  padding: 10px o;
+  color: $light-text-color;
+
+  .container {
+    @include container;
+
+    .leftRow {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .rightRow {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    svg {
+      margin-right: 10px;
+    }
+
+    label {
+      font-size: 13px;
+    }
+  }
+}
