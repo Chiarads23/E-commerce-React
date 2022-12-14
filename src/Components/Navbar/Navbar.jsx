@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React  from "react";
 import { Link } from "react-router-dom";
-import { FaChevronDown, FaBorderAll, FaTimes, FaBars } from "react-icons/fa";
+import { FaChevronDown, FaBorderAll  } from "react-icons/fa";
 import styles from "../../Styles/Layout/Navbar.module.scss";
 
 const Navbar = () => {
-  const [mobileMenu, setMobileMenu] = useState();
+  // const [mobileMenu, setMobileMenu] = useState();
 
   return (
     <header className={styles.header}>
@@ -16,7 +16,7 @@ const Navbar = () => {
           </h4>
         </div>
         <div className={styles.navLink}>
-          <ul className= {styles.list}>
+          <ul  className={styles.list}>
           
             <li>
               <Link to="/">Home </Link>
@@ -37,9 +37,9 @@ const Navbar = () => {
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
-          <button onClick={() => setMobileMenu(!mobileMenu)}>
-            {mobileMenu ? <FaTimes /> : <FaBars />}
-          </button>
+          {/* <button className={styles.toggle} onClick={() => setMobileMenu(!mobileMenu)}>
+            {mobileMenu ? <FaTimes className={styles.close}/> : <FaBars  className={styles.open}/>}
+          </button> */}
         </div>
       </div>
     </header>
