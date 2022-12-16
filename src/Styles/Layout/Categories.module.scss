@@ -1,0 +1,36 @@
+@import "../variables.scss";
+@import "../mixins";
+
+.category{
+   @include border;
+min-width: 232px;
+height: 210px;
+   padding: 2px 4px;
+margin: 0 0 5px 75px;
+display: flex;
+flex-direction: column;
+
+ 
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        color: $fifth-color;
+        transition: 0.5s;
+        &:hover{
+            border-radius: 10px;
+            background-color: $third-color;
+            cursor: pointer;
+        }
+      .categIcons{
+        background-color:$first-color;
+      }
+
+      span{
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+    }
+}

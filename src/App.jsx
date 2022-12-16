@@ -1,17 +1,20 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter , Route,   Routes } from "react-router-dom";
 import Header from './Components/Header/Header';
+import Pages from './Components/Pages';
 import './App.module.scss';
+
 
 function App() {
   return (
-  <Router> 
+  <BrowserRouter> 
     <Header />
-    {/* <Switch>  
-      <Route path='/about' exact>
-        <About />
-      </Route>
-    </Switch>   */}
-   </Router>
+    
+    <Routes>  
+      <Route path='/' element={<Pages/>} />
+     
+      
+    </Routes>  
+   </BrowserRouter>
   );
 }
 

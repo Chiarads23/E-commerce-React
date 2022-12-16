@@ -1,8 +1,8 @@
 import React from "react";
 import { FaSearch, FaUser, FaShoppingBag } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import styles from "../../Styles/Layout/Search.module.scss";
-import logo from "../../assets/logo.png";
+import styles from "../../../Styles/Layout/Search.module.scss";
+import logo from "../../../assets/logo.png";
 
 const Search = () => {
   // window.addEventListener('scroll', function () {

@@ -13,3 +13,11 @@
   padding: $padding;
   justify-content: $justify-content;
 }
+
+@mixin border(
+  $box-shadow: 1px 3px 10px $shadow-color,
+  $border-radius: 10px
+) {
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}

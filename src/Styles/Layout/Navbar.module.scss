@@ -2,26 +2,35 @@
 @import "../mixins";
 
 .header{
-  background-color: $fifth-color-blur;
-
+  background-color: $background-color;
+  box-shadow: 0 3px 10px $shadow-color;
+margin-bottom:24px ;
+padding:0 ;
+@media only screen and (min-width: 635px){
+  padding:2px 0 2px 0;
+}
   .container {
   @include container;
   color: $dblue-text-color;
   align-items: center;
 
   .categories {
+    @include border;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 40px;
     gap: 5px;
     background-color: $fourth-color-blur;
-    box-shadow: 1px 3px 10px $shadow-color;
-    border-radius: 10px;
     padding: 2px;
-  }
 
-  .list {
+  }
+  .list{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+margin: 0;
     @media only screen and (min-width: 635px) {
       display: flex;
       justify-content: space-between;
@@ -38,7 +47,7 @@
       transition: 0.5s;
       
       &:hover {
-        color: $fifth-color;
+        color: $first-color;
         font-weight: bold;
       }
      

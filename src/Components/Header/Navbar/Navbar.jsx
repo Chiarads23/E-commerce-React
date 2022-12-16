@@ -1,7 +1,7 @@
 import React  from "react";
 import { Link } from "react-router-dom";
 import { FaChevronDown, FaBorderAll  } from "react-icons/fa";
-import styles from "../../Styles/Layout/Navbar.module.scss";
+import styles from "../../../Styles/Layout/Navbar.module.scss";
 
 const Navbar = () => {
   // const [mobileMenu, setMobileMenu] = useState();

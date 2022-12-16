@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaPhone, FaEnvelope } from "react-icons/fa";
 
-import styles from '../../Styles/Layout/Head.module.scss';
+import styles from '../../../Styles/Layout/Head.module.scss';
 
 const Head= () => {
     return(

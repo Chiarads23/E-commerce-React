@@ -1,0 +1,33 @@
+@import "../variables.scss";
+@import "../mixins";
+
+.box{
+  
+display: flex;
+flex-direction: row;
+align-items: center;
+margin: 15px 0 15px 0 ;
+  
+   h1, p{
+    margin: 0;
+   }
+    p{height: fit-content;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+   button{
+    color: $dark-text-color;
+    background-color: $fifth-color;
+    @include border;
+    border: none;
+   }
+    .prodImg{
+        border-radius: 10px;
+    margin: 0;
+    padding: 5px;
+    width: 100px;
+    height: auto;
+   
+    
+
+}}

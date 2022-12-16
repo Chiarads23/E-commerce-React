@@ -1,0 +1,10 @@
+@import "../variables.scss";
+@import "../mixins";
+
+.container{
+    @include container;
+    color: $dblue-text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
