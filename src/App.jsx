@@ -1,20 +1,19 @@
-import { BrowserRouter , Route,   Routes } from "react-router-dom";
-import Header from './Components/Header/Header';
-import Pages from './Components/Pages';
-import './App.module.scss';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./Components/Header/Header";
+import Pages from "./Components/Pages";
 
+import "./App.module.scss";
 
 function App() {
   return (
-  <BrowserRouter> 
-    <Header />
-    
-    <Routes>  
-      <Route path='/' element={<Pages/>} />
+    <BrowserRouter>
      
+        <Header /> 
+        <Routes>
+          <Route path="/" element={<Pages />} />
+        </Routes>
       
-    </Routes>  
-   </BrowserRouter>
+    </BrowserRouter>
   );
 }
 

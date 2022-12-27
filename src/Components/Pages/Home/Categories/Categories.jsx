@@ -1,7 +1,5 @@
 import React from "react";
 
-// import { useState, useEffect } from "react";
-
 import styles from "../../../../Styles/Layout/Categories.module.scss";
 
 const Categories = () => {

@@ -7,7 +7,7 @@ const Slider = () => {
         <div>
             <section className={styles.Slider}>
                 <div className={styles.container}>
-                    <SlideCard />
+                    <SlideCard  />
                 </div>
             </section>
         </div>

@@ -1,33 +1,45 @@
 @import "../variables.scss";
 @import "../mixins";
 
-.box{
-  
-display: flex;
-flex-direction: row;
-align-items: center;
-margin: 15px 0 15px 0 ;
-  
-   h1, p{
-    margin: 0;
-   }
-    p{height: fit-content;
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+    border: 2px solid $fifth-color-blur;
+    border-radius: 5px;
+    padding: 5px;
+   width: 400px;
+    @media only screen and (max-width: 440px){
+        max-width: 350px ;
+    }
+    h1,
+    p {
+        margin: 0;
+    }
+
+    p {
+        padding: 5px;
+        height: fit-content;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-   button{
-    color: $dark-text-color;
-    background-color: $fifth-color;
-    @include border;
-    border: none;
-   }
-    .prodImg{
-        border-radius: 10px;
-    margin: 0;
-    padding: 5px;
-    width: 100px;
-    height: auto;
-   
-    
 
-}}
+    button {
+        color: $dark-text-color;
+        background-color: $fifth-color;
+        cursor: pointer;
+        @include border;
+        border: none;
+    }
+
+    .prodImg {
+        @include border;
+
+        margin: 0;
+        padding: 5px;
+        width: 100px;
+        height: auto;
+    }
+}

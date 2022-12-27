@@ -1,6 +1,6 @@
 import React from 'react';
 import Categories from './Categories';
-import SlideCard from './SlideCard';
+
 import Slider from './Slider';
 import styles from '../../../Styles/Layout/Home.module.scss';
 
