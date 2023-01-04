@@ -9,12 +9,7 @@ const Navbar = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div className={styles.categories}>
-          <FaBorderAll />
-          <h4>
-            Categories <FaChevronDown />
-          </h4>
-        </div>
+  
         <div className={styles.navLink}>
           <ul  className={styles.list}>
           

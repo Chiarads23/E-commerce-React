@@ -1,19 +1,19 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
+import { useState } from "react";
 import Header from "./Components/Header/Header";
 import Pages from "./Components/Pages";
 
 import "./App.module.scss";
 
 function App() {
+
   return (
-    <BrowserRouter>
-     
-        <Header /> 
-        <Routes>
-          <Route path="/" element={<Pages />} />
-        </Routes>
-      
-    </BrowserRouter>
+<div>
+  <Router>
+    <Header />
+    <Pages />
+  </Router>
+</div>
   );
 }
 
